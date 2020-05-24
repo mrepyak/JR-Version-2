@@ -1,0 +1,395 @@
+/* CSS Document */
+html {
+  font-family: 'Montserrat';
+}
+
+/* Whole Document Formatting */
+
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .spacing{
+    width:100%;
+    height: 40px;
+    text-align: center;
+    font-size: 200%;
+    color: white;
+    font: bolder;
+  }
+
+/* Header Formatting */
+
+.header{
+  font-family: 'Montserrat';
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #101010;
+}
+
+
+.inner_header{
+  width: 80%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.logo_container{
+  color: white;
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.logo_container h1{
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.logo_container h1 span{
+  font-weight: 800;
+}
+
+.logo_container h1 a{
+  color: white;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+    color: white;
+
+}
+
+.navigation a{
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+  }
+
+.navigation a:last-child{
+  padding-right: 0;
+}
+
+
+.navigation a li{
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: white;
+  font-size: 16px;
+}
+
+.navigation li b{
+  font-size: 150%;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+.header a {
+float: none;
+display: block;
+text-align: left;
+}
+.header-right {
+float: none;
+}
+}
+
+
+/* Body Formatting */
+
+.name {
+	font-style: normal;
+	font-weight: normal;
+	color: white;
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+	line-height: normal;
+	text-align: center;
+	letter-spacing: 0px;
+}
+
+h2 {
+	font-style: normal;
+	font-weight: normal;
+	color: white;
+	display: block;
+	font-size: 15px;
+	margin-bottom: 10px;
+	line-height: normal;
+	text-align: center;
+	letter-spacing: 0px;
+}
+
+body{
+  background: #333333;
+}
+section {
+    background: black;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+
+A:HOVER {
+	color: #111111;
+	font-weight: bolder;
+}
+/* Boxes for Homepage */
+
+.frontwrapper{
+  display:grid;
+  grid-template-columns: repeat(15,6em);
+  grid-template-rows: repeat(4, 7em);
+  padding-left: 3em;
+    }
+
+.frontwrapper div{
+  color:#FFFFFF;
+  border: none;
+  text-align: left;
+}
+
+.box1{
+  padding: 10px;
+  grid-column: 1/10;
+  grid-row: 1/2;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  }
+.box2{
+  padding: 10px;
+  grid-column: 1/10;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  }
+
+.circleimage{
+  grid-column: 7/10;
+  grid-row: 1/5;
+  display: grid;
+  grid-template-columns: subgrid;
+
+}
+
+.openinghello {
+  font-size: 300%;
+}
+
+.openinghello span{
+  font-size: 145%;
+}
+h4 {
+  font-size: 110%;
+  text-transform: uppercase;
+  line-height: 2em;
+  text-align: left;
+  color: black;
+  text-shadow: .5px .5px grey;
+}
+.aboutme {
+  font-size: 110%;
+  font-style: normal;
+  text-align: left;
+  padding: 70px;
+  color: white;
+  }
+
+  .aboutme h1{
+    color: teal;
+    text-align: left;
+    font-size: 150%;
+  }
+
+.aboutme p b{
+  color: teal;
+}
+
+.aboutme a{
+  color: white;
+  text-decoration: underline;
+  }
+
+  .aboutheader{
+    font-size: 160%;
+    font-style: normal;
+    text-align: center;
+    background: grey;
+    color: black;
+    padding 70px;
+  }
+
+
+/*Surefire Page*/
+
+.surefire{
+  width: 50%;
+  height: auto;
+
+}
+
+/*Contact Cards*/
+
+.contactcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  max-height: 400px;
+  text-align: center;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.contacttitle {
+  color: grey;
+  font-size: 18px;
+}
+
+
+
+.contactme{
+  font: white;
+}
+
+.email {
+  width: 20%;
+  height: auto;
+}
+
+.john{
+  width: 30%;
+  height: auto;
+}
+
+/*Button Style*/
+
+.btn-style-one{
+    position: left;
+    line-height: 30px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid #fdb40e;
+    background: #fdb40e;
+    text-transform: capitalize;
+    padding: 15px 50px 15px;
+}
+.theme-btn{
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-style-one: hover{
+    background-color: transparent;
+    text-decoration: none;
+    color:white;
+    border: 1px solid white;
+        }
+
+.btn-box{
+  padding: 3em;
+
+}
+
+
+/*Business Card*/
+* {
+    box-sizing: border-box;
+  }
+
+  .column
+  {
+      width:100%;
+      float:center;
+      padding:100px 10px;
+  }
+
+  .row:after{
+      content:"";
+      display:table;
+      clear:both;
+  }
+
+
+
+  @media screen and (max-width:600px)
+  {
+      .column
+      {
+          width:100%;
+          display:block;
+          margin-bottom: 20px;
+      }
+  }
+
+  .card
+  {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      max-width:300px;
+      margin:auto;
+      background-color:white;
+      text-align:center;
+      border-radius:40px;
+      padding-bottom:15px;
+      align-items: center;
+  }
+
+  .profile {
+    border-radius: 50%;
+  }
+
+  .title  {
+      color:gray;
+      font-size:18px;
+  }
+
+  .li-img {
+    width: 13%;
+    height: auto;
+    display: inline-block;
+    }
+
+
+
+  button
+  {
+      border:none;
+      padding:8px;
+      display: inline-block;
+      color:white;
+      background-color:black;
+      cursor:pointer;
+      width:70%;
+      border-radius:20px;
+      font-size:18px;
+      text-align:center;
+  }
+
+  button a{
+    color:white;
+  }
+
+  .title a{
+      text-decoration: none;
+      font-size:22px;
+      color:black;
+  }
